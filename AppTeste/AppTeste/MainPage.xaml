@@ -3,9 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AppTeste"
              x:Class="AppTeste.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+            
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Welcome To Hamburguer!!!"
+           Grid.Row="2" Grid.Column="0"
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center"/>
 
+        <Label Text="Nova Label Add"
+           Grid.Row="0" Grid.Column="5"
+           VerticalOptions="Center"
+           FontAttributes="Bold"
+           FontSize="Large"
+           TextColor="Blue"/>
+
+        <BoxView Color="YellowGreen"
+             Grid.Row="1"
+             Grid.Column="0"/>
+
+        <BoxView Color="BlueViolet"
+             Grid.Row="2"
+             Grid.Column="0"/>
+
+        <BoxView Color="DarkSeaGreen"
+             Grid.Row="3"
+             Grid.Column="0"/>
+
+        <StackLayout Grid.Row="1" Grid.Column="1">
+
+            <Button Text="Faça isso - 15 Graus"
+             HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand"
+             BorderWidth="3"
+             Rotation="15"
+             TextColor="Red"
+             FontSize="24"/>
+
+            <Button Text="Faça isso - 20 Graus"
+             HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand"
+             BorderWidth="3"
+             Rotation="20"
+             TextColor="Blue"
+             FontSize="24"/>
+
+            <Button Text="Faça isso - 25 Graus"
+             HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand"
+             BorderWidth="3"
+             Rotation="25"
+             TextColor="Blue"
+             FontSize="24"/>
+
+            <Button Text="Faça isso - 30 Graus"
+             HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand"
+             BorderWidth="3"
+             Rotation="30"
+             TextColor="DarkBlue"
+             FontSize="24"/>
+        </StackLayout>
+    
+    </Grid>
+    
 </ContentPage>
